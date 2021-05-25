@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-display: "Josefin Sans", sans-serif;
+}
+body {
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.main {
+  height: 100vh;
+}
+.box {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.288);
+  border-radius: 23px;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.box .profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.user_name {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+.skill {
+  color: rgba(255, 255, 255, 0.555);
+}
+.right_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.arr_container {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  bottom: 0;
+  right: 0;
+  border-radius: 23px 0 23px 0;
+  color: rgb(70, 70, 70);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.4s;
+  padding-left: 17px;
+}
+.arr_container img {
+  transform: rotate(45deg);
+  height: 40px;
+  width: 59px;
+}
+.cancel_container {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  bottom: 0;
+  right: 0;
+  border-radius: 23px 0 23px 0;
+  color: rgb(70, 70, 70);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.4s;
+  padding-left: 17px;
+}
+.cancel_container img {
+  transform: rotate(91deg);
+  height: 40px;
+  width: 59px;
+}
+.active_arr {
+  transform: translate(80%, 80%);
+}
+.left_container {
+  position: absolute;
+  background: #0f2027;
+  width: 100%;
+  height: 100%;
+  border-radius: 23px;
+  padding: 5px 15px 15px 15px;
+  transition: all 0.4s;
+}
+.left_container > .left_container-title {
+  font-size: 1.5rem;
+}
+.skills {
+  margin: 10px 0px 10px 0px;
+}
+.skillsName {
+  border: 1px solid #575757;
+  color: #c0c0c0;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 6px 7px 5px 0;
+  box-shadow: 0px 0px 2px 0px #faf8f8;
+}
+.icons {
+  cursor: pointer;
+}
+.icons > img {
+  height: 30px;
+  margin-left: 12px;
+  margin-top: 8px;
+  opacity: 0.5;
+}
+.icons > img:hover {
+  opacity: 1;
+  transition: all 0.4s;
+}
+#off {
+  transform: translate(-100%, 0%) rotate(0deg);
+}
