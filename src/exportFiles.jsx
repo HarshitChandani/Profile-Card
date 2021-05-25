@@ -1,6 +1,3 @@
-// this jsx files is used for export the compoments so that our
-// code looks more readable.
-
 export { default as Profile } from "./images/user.svg";
 export { default as Cross } from "./images/wrong-access.svg";
 export { default as RightArrow } from "./images/next-arrow.svg";
